@@ -1,0 +1,474 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Sungjun Kim — Robot Learning & Bimanual Manipulation</title>
+<meta name="description" content="Sungjun Kim is a robotics researcher (M.S., Korea University & KIST) building robot intelligence for autonomy: perception, decision-making, and action on real robot arms and humanoids. Bimanual manipulation, robot/imitation learning, robot perception.">
+<meta name="color-scheme" content="dark">
+<meta name="theme-color" content="#0b0b0c">
+<link rel="canonical" href="https://sjkimr.github.io/">
+<meta property="og:type" content="profile">
+<meta property="og:title" content="Sungjun Kim — Robot Learning & Bimanual Manipulation">
+<meta property="og:description" content="M.S. student at Korea University & KIST. Bimanual manipulation, robot/imitation learning, robot perception. BiGraspAfford (IROS 2026).">
+<meta property="og:url" content="https://sjkimr.github.io/">
+<meta property="og:image" content="https://sjkimr.github.io/assets/bigraspafford.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%230b0b0c'/%3E%3Ccircle cx='24' cy='32' r='9' fill='%23ff6a3d'/%3E%3Ccircle cx='42' cy='32' r='9' fill='none' stroke='%23f2f1ee' stroke-width='4'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/style.css?v=20261026s">
+</head>
+<body>
+
+<a class="skip" href="#research">Skip to content</a>
+
+<header class="nav" id="top">
+  <a class="nav__logo" href="#top" aria-label="Home">
+    <span class="dot dot--fill"></span><span class="dot dot--ring"></span>
+    <span class="nav__name">sjkim</span>
+  </a>
+  <nav class="nav__links" aria-label="Sections">
+    <a href="#research">Research</a>
+    <a href="#timeline">Education</a>
+    <a href="#projects">Projects</a>
+    <a href="#publications">Publication</a>
+    <a href="#awards">Awards</a>
+    <a href="#contact">Contact</a>
+  </nav>
+</header>
+
+<!-- ===================== HERO ===================== -->
+<section class="hero" id="hero">
+  <canvas class="hero__cloud" id="cloud" aria-hidden="true"></canvas>
+
+  <div class="wrap hero__inner">
+    <div class="hero__text">
+      <p class="eyebrow reveal">
+        <span class="status"><span class="status__pulse"></span>M.S. student</span>
+        <span class="sep">/</span> Korea University × KIST
+        <span class="sep">/</span> Seoul, KR
+      </p>
+      <h1 class="hero__title reveal" style="--d:.08s">
+        Robots that see,<br>
+        <em>decide</em>, and act.
+      </h1>
+      <p class="hero__lede reveal" style="--d:.16s">
+        I'm <strong>Sungjun Kim</strong>, a robotics researcher building robot intelligence for autonomy:
+        <span class="hl">perception</span> that understands the scene, <span class="hl">decision-making</span> that
+        turns it into a plan, and <span class="hl">action</span> on real robot arms and humanoids.
+      </p>
+      <div class="hero__cta reveal" style="--d:.24s">
+        <a class="btn btn--primary" href="#projects">See the work <span class="arrow">↓</span></a>
+        <a class="btn btn--ghost" href="mailto:sungjun4257@gmail.com">Get in touch</a>
+      </div>
+    </div>
+
+    <figure class="hero__card reveal" style="--d:.2s">
+      <div class="hero__photo">
+        <img src="assets/profile.png" alt="Portrait of Sungjun Kim" width="227" height="305">
+      </div>
+      <figcaption class="mono">
+        <span>SUNGJUN KIM</span>
+        <span class="muted">Seoul, KR</span>
+      </figcaption>
+    </figure>
+  </div>
+
+</section>
+
+<main>
+
+<!-- ===================== RESEARCH ===================== -->
+<section class="section" id="research">
+  <div class="wrap">
+    <header class="section__head reveal">
+      <span class="index mono">01</span>
+      <h2>Research interests</h2>
+    </header>
+
+    <div class="cards">
+      <article class="card reveal" style="--d:.05s">
+        <div class="card__icon" aria-hidden="true">
+          <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M8 40V26l8-10h6M40 40V26l-8-10h-6"/><circle cx="24" cy="12" r="4"/><path d="M8 40h8M32 40h8"/>
+          </svg>
+        </div>
+        <h3>Bimanual Manipulation</h3>
+        <p>Manipulation with two arms, on one object together or on different objects separately. The main questions are which arm should grasp where, what each arm should do, and in what order, on dual-arm manipulators and humanoids.</p>
+        <ul class="chips"><li>Dual-arm grasping</li><li>Arm assignment</li><li>Long-horizon tasks</li></ul>
+      </article>
+
+      <article class="card reveal" style="--d:.12s">
+        <div class="card__icon" aria-hidden="true">
+          <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M6 36c6-16 12-16 18 0s12 16 18 0"/><circle cx="12" cy="20" r="2.5" fill="currentColor" stroke="none"/><circle cx="24" cy="36" r="2.5" fill="currentColor" stroke="none"/><circle cx="36" cy="20" r="2.5" fill="currentColor" stroke="none"/>
+          </svg>
+        </div>
+        <h3>Robot &amp; Imitation Learning</h3>
+        <p>Policies that generalize beyond their training demonstrations. I am interested in how imitation learning and vision-language-action models behave on real robots, and in the gap between what a model understands and what the robot actually does.</p>
+        <ul class="chips"><li>Imitation learning</li><li>VLA models</li><li>Teleop data</li></ul>
+      </article>
+
+      <article class="card reveal" style="--d:.19s">
+        <div class="card__icon" aria-hidden="true">
+          <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M6 24s7-12 18-12 18 12 18 12-7 12-18 12S6 24 6 24z"/><circle cx="24" cy="24" r="5"/><path d="M24 6v4M24 38v4M6 10l3 3M42 10l-3 3"/>
+          </svg>
+        </div>
+        <h3>Robot Perception</h3>
+        <p>Perception for manipulation: detecting and segmenting objects, estimating where they are and how they can be grasped, and understanding what is around them from RGB-D images and 3D point clouds.</p>
+        <ul class="chips"><li>Detection &amp; segmentation</li><li>Grasp affordance</li><li>6D pose</li><li>Point clouds</li></ul>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== TIMELINE ===================== -->
+<section class="section" id="timeline">
+  <div class="wrap">
+    <header class="section__head reveal">
+      <span class="index mono">02</span>
+      <h2>Education &amp; experience</h2>
+    </header>
+
+    <ol class="timeline">
+      <li class="tl reveal">
+        <div class="tl__when mono">2025 — now</div>
+        <div class="tl__dot"><span></span></div>
+        <div class="tl__what">
+          <span class="tag tag--edu">M.S.</span>
+          <h3>Korea University &amp; KIST</h3>
+          <p>Department of Artificial Intelligence</p>
+          <p>Advisors: KangGeon Kim, Sangpil Kim</p>
+          <p class="muted">Research area: Bimanual manipulation, robot learning, robot perception</p>
+        </div>
+      </li>
+      <li class="tl reveal">
+        <div class="tl__when mono">2024 — 2025</div>
+        <div class="tl__dot"><span></span></div>
+        <div class="tl__what">
+          <span class="tag tag--work">Research intern</span>
+          <h3>Robot Vision Lab, KIST</h3>
+          <p class="muted">Research area: Computer vision, robot manipulation</p>
+        </div>
+      </li>
+      <li class="tl reveal">
+        <div class="tl__when mono">2020 — 2024</div>
+        <div class="tl__dot"><span></span></div>
+        <div class="tl__what">
+          <span class="tag tag--edu">B.S.</span>
+          <h3>Kwangwoon University</h3>
+          <p>Division of Robotics</p>
+          <div class="tl__sub">
+            <span class="tag tag--activity">Activity</span>
+            <p><strong>ROBIT, Robot Sports Game Team</strong> · Humanoid team leader · 2021 – 2024</p>
+            <p class="muted">Vision system for RoboCup humanoid soccer, circuit design, team leading</p>
+          </div>
+        </div>
+      </li>
+    </ol>
+  </div>
+</section>
+
+<!-- ===================== PROJECTS ===================== -->
+<section class="section" id="projects">
+  <div class="wrap">
+    <header class="section__head reveal">
+      <span class="index mono">03</span>
+      <h2>Projects</h2>
+    </header>
+
+    <ol class="projects">
+      <li class="proj reveal">
+        <div class="proj__side">
+          <span class="proj__num mono">01</span>
+          <span class="proj__when mono">2026.10</span>
+        </div>
+        <div class="proj__main">
+          <h3>Agent-driven bimanual manipulation</h3>
+          <p class="proj__lead">An LLM agent drives a dual-arm Franka system through a long-horizon kitchen task with no task-specific training.</p>
+          <ul class="chips"><li>LLM agent</li><li>Franka ×2</li><li>3-finger gripper</li><li>RGB-D</li><li>Python</li></ul>
+          <details class="proj__details">
+            <summary><span>Details</span></summary>
+            <p>A general-purpose LLM agent acts as the policy for a dual-arm Franka system. One sentence of instruction becomes a zero-shot, long-horizon task: the agent defines the task, runs an observe–decide–act–verify loop, keeps lessons in cross-session memory, and recovers from its own failures.</p>
+            <p class="proj__result"><span class="mono">RESULT</span> 4 / 5 success on "put the apple in the pot and move it to the stove" (open lid → pick → place → close lid → carry pot with both arms) with no task-specific training.</p>
+        <figure class="proj__figure">
+          <a href="assets/agent_pipeline.png" target="_blank" rel="noopener"><img src="assets/agent_pipeline.png" alt="Agent pipeline: task preparation (user request, agent–user clarification, task definition) and task execution (execution agent with 3D localization, pose planning, memory, and executable code, connected to the robot through an agent–robot bridge)" loading="lazy" width="1614" height="660"></a>
+          <figcaption><span class="mono">Pipeline</span>Task preparation turns the request into a task definition; the execution agent then writes and runs programs against the robot, using each new observation to decide the next step.</figcaption>
+            </figure>
+            <div class="proj__gallery">
+          <figure class="proj__clip">
+            <video class="proj__video" autoplay muted loop playsinline preload="metadata" poster="assets/agent_poster.jpg">
+              <source src="assets/agent_loop.mp4" type="video/mp4">
+            </video>
+            <figcaption><span class="mono">Clean run · 32× speed</span>Open lid, place the apple, close the lid, carry the pot to the stove with both arms.</figcaption>
+          </figure>
+          <figure class="proj__clip">
+            <video class="proj__video" autoplay muted loop playsinline preload="metadata" poster="assets/agent_recovery_poster.jpg">
+              <source src="assets/agent_recovery.mp4" type="video/mp4">
+            </video>
+            <figcaption><span class="mono">Self-recovery · 32× speed</span>The lid lands misaligned. The agent notices, lifts it, and closes it again before moving on.</figcaption>
+          </figure>
+            </div>
+          </details>
+        </div>
+      </li>
+
+      <li class="proj reveal">
+        <div class="proj__side">
+          <span class="proj__num mono">02</span>
+          <span class="proj__when mono">2026.03 — now</span>
+          <span class="pill pill--live mono">Ongoing</span>
+        </div>
+        <div class="proj__main">
+          <h3>Humanoid VLA on the Unitree G1</h3>
+          <p class="proj__lead">Teleoperation data pipelines and GR00T fine-tuning on a real Unitree G1 humanoid.</p>
+          <ul class="chips"><li>GR00T</li><li>SONIC</li><li>Teleoperation</li><li>PICO VR</li><li>Unitree G1</li><li>PyTorch</li></ul>
+          <details class="proj__details">
+            <summary><span>Details</span></summary>
+            <p>Built teleoperation data pipelines for the Unitree G1 — DYNAMIXEL leader arms for upper-body manipulation, NVIDIA SONIC + PICO VR for whole-body control — and fine-tuned GR00T to probe compositional generalization on pick-and-place, fridge opening, and grasping on the real robot.</p>
+            <p class="proj__result"><span class="mono">RESULT</span> 640+ teleop episodes (320 upper-body pick-and-place over 8 objects, 324 whole-body for two skills); GR00T policies deployed autonomously on the real G1.</p>
+          </details>
+        </div>
+      </li>
+
+      <li class="proj reveal">
+        <div class="proj__side">
+          <span class="proj__num mono">03</span>
+          <span class="proj__when mono">2025.01 — 2026.03</span>
+          <span class="pill pill--accent mono">IROS 2026</span>
+        </div>
+        <div class="proj__main">
+          <h3><a href="#publications">BiGraspAfford: bimanual grasp affordance learning</a></h3>
+          <p class="proj__lead">Separate left- and right-arm grasp affordances so a dual-arm robot knows which arm grasps where.</p>
+          <ul class="chips"><li>PyTorch</li><li>VLM</li><li>Point clouds</li><li>6D grasp pose</li><li>Franka ×2</li></ul>
+          <details class="proj__details">
+            <summary><span>Details</span></summary>
+            <p>Predicts a separate grasp affordance for the left and the right arm, so a dual-arm robot knows which arm should grasp where while accounting for collisions with the scene. A VLM grounds the instruction and picks arms and skills from L/R visual prompts; a sampling-based MPC controller executes. Joint research with the Hyundai Motor Robotics Lab.</p>
+            <p class="proj__result"><span class="mono">RESULT</span> 86% success on real-robot bimanual tasks, 29% shorter execution than arm-agnostic grasping, and +28 / +37 mAP over 3DAffordanceNet on seen / unseen objects.</p>
+          </details>
+        </div>
+      </li>
+
+      <li class="proj reveal">
+        <div class="proj__side">
+          <span class="proj__num mono">04</span>
+          <span class="proj__when mono">2024.01 — 2025.01</span>
+          <span class="pill mono">Industry</span>
+        </div>
+        <div class="proj__main">
+          <h3>Real-time image enhancement for remote robot operation in hazardous sites</h3>
+          <p class="proj__lead">Real-time super-resolution and contrast enhancement on a Jetson Nano for robots at furnace sites.</p>
+          <ul class="chips"><li>PyTorch</li><li>ESPCN</li><li>CLAHE</li><li>OpenCV</li><li>Jetson Nano</li></ul>
+          <details class="proj__details">
+            <summary><span>Details</span></summary>
+            <p>Remote operators of furnace-site robots could not see slag regions against the glare of molten metal. A custom ESPCN super-resolution model with residual learning, combined with CLAHE for backlight contrast, restores detail in real time on an embedded Jetson Nano. Commissioned by POSCO Holdings.</p>
+            <p class="proj__result"><span class="mono">RESULT</span> PSNR 30.59 dB, a 9.6% gain over the baseline ESPCN, running in real time on a Jetson Nano.</p>
+          </details>
+        </div>
+      </li>
+
+      <li class="proj reveal">
+        <div class="proj__side">
+          <span class="proj__num mono">05</span>
+          <span class="proj__when mono">2021.07 — 2024.02</span>
+          <span class="pill mono">RoboCup</span>
+        </div>
+        <div class="proj__main">
+          <h3>Integrated vision system for humanoid robot soccer</h3>
+          <p class="proj__lead">A real-time detection, tracking, and localization pipeline for RoboCup humanoid soccer, running on the robot's on-board PC.</p>
+          <ul class="chips"><li>C/C++</li><li>OpenCV</li><li>YOLOv4-tiny</li><li>ROS</li><li>Qt</li><li>PID control</li><li>Particle filter</li></ul>
+          <details class="proj__details">
+            <summary><span>Details</span></summary>
+            <p>RoboCup humanoid soccer is fully autonomous: the robot has to find the ball, goals, lines, and other robots, know where it stands on the field, and walk there by itself. I built the vision stack end to end, from camera calibration to the ball position and robot pose that the behavior layer consumes.</p>
+            <p><strong>Detection.</strong> White lines and penalty marks come from color-space thresholding (HSV, LAB, or YUV chosen per object), field masking, and contour labeling. The ball and X-crosses come from a YOLO-tiny detector trained on field images we collected and labeled ourselves. Moving inference from YOLOv3-tiny on Darknet to YOLOv4-tiny on OpenCV DNN took on-board throughput from 6.25 to 24 fps, fast enough to keep detecting while walking.</p>
+            <div class="proj__gallery">
+          <figure class="proj__clip">
+            <video class="proj__video" autoplay muted loop playsinline preload="metadata" poster="assets/robit_vision_penalty_poster.jpg">
+              <source src="assets/robit_vision_penalty.mp4" type="video/mp4">
+            </video>
+            <figcaption><span class="mono">Ball + penalty mark</span>YOLOv4-tiny ball detection next to the color-space penalty-mark detector used as a localization landmark.</figcaption>
+          </figure>
+          <figure class="proj__clip">
+            <video class="proj__video" autoplay muted loop playsinline preload="metadata" poster="assets/robit_ball_walking_poster.jpg">
+              <source src="assets/robit_ball_walking.mp4" type="video/mp4">
+            </video>
+            <figcaption><span class="mono">Ball detection while walking</span>YOLOv4-tiny keeps detecting the ball from the on-board camera during gait.</figcaption>
+          </figure>
+            </div>
+            <p><strong>Tracking and distance.</strong> A PID loop on the pan–tilt head keeps the ball centered in the image during gait. Camera intrinsics combined with the robot height and head angles project the ball pixel onto the ground plane for range and bearing, which drive the approach walk. With our own calibration the distance error at 1.5–2 m came down to 11.6%, from 23.7% with the stock ROS calibration tool.</p>
+            <div class="proj__gallery">
+          <figure class="proj__clip">
+            <a href="assets/robit_pid_tracking.jpg" target="_blank" rel="noopener"><img class="proj__video" src="assets/robit_pid_tracking.jpg" alt="PID ball tracking: a 640 by 480 camera image with the set point at the image center (320, 240) and an arrow to the detected ball, next to a PID control loop block diagram whose x and y outputs drive the pan and tilt servos" loading="lazy" width="1600" height="900"></a>
+            <figcaption><span class="mono">PID ball tracking</span>The offset between the image center (320, 240) and the detected ball feeds a PID loop whose x and y outputs drive the pan and tilt servos.</figcaption>
+          </figure>
+          <figure class="proj__clip">
+            <a href="assets/robit_distance_geometry.png" target="_blank" rel="noopener"><img class="proj__video" src="assets/robit_distance_geometry.png" alt="Monocular distance estimation geometry: camera center C at height h above the ground point C′, the normalized image plane with the ball pixel p(u,v), the optical axis, and the ground point P of the ball at distance d, with the equations for C′P′, CP′, Cp′, PP′ and d" loading="lazy" width="2000" height="1335" style="object-fit:contain"></a>
+            <figcaption><span class="mono">Distance geometry</span>The ball pixel p(u,v) is projected onto the ground plane using the camera height h and the head tilt angle, giving the range d and bearing to the ball.</figcaption>
+          </figure>
+            </div>
+            <p><strong>Localization.</strong> Line contours, penalty marks, and X-crosses feed a particle filter that estimates the robot's pose on the field. An in-house Qt tool shows the live camera, the HSV thresholds, and the particle map side by side for tuning at the venue.</p>
+            <div class="proj__gallery">
+          <figure class="proj__clip">
+            <video class="proj__video" autoplay muted loop playsinline preload="metadata" poster="assets/robit_localization_poster.jpg">
+              <source src="assets/robit_localization.mp4" type="video/mp4">
+            </video>
+            <figcaption><span class="mono">Localization</span>Left: the particle filter converging on the robot's pose. Right: the vision tool detecting an X-cross and the ball with their estimated distances.</figcaption>
+          </figure>
+          <figure class="proj__clip">
+            <video class="proj__video" autoplay muted loop playsinline preload="metadata" poster="assets/robit_vision_tracking_poster.jpg">
+              <source src="assets/robit_vision_tracking.mp4" type="video/mp4">
+            </video>
+            <figcaption><span class="mono">Localization while walking</span>Left: the particle map updating as the robot walks. Right: the on-board camera view at the same moment.</figcaption>
+          </figure>
+            </div>
+            <p class="proj__result"><span class="mono">RESULT</span> Six podium finishes in 2021–2022, including 2nd place in the RoboCup 2022 KidSize Technical Challenge.</p>
+          </details>
+        </div>
+      </li>
+    </ol>
+  </div>
+</section>
+
+<!-- ===================== PUBLICATIONS ===================== -->
+<section class="section" id="publications">
+  <div class="wrap">
+    <header class="section__head reveal">
+      <span class="index mono">04</span>
+      <h2>Publication</h2>
+    </header>
+
+    <ol class="pubs">
+      <li class="pub reveal">
+        <p class="pub__title">BiGraspAfford: Collision-Aware Bimanual Grasp Affordance Learning for Dual-Arm Manipulation</p>
+        <p class="pub__authors"><strong>Sungjun Kim</strong>, Minji Seo, Yisoo Lee, Sangpil Kim, KangGeon Kim</p>
+        <p class="pub__venue">IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS), 2026 · accepted</p>
+        <p class="pub__links">
+          <a href="https://sjkimr.github.io/BiGraspAfford/">Project page</a>
+        </p>
+      </li>
+    </ol>
+  </div>
+</section>
+
+
+<!-- ===================== AWARDS ===================== -->
+<section class="section" id="awards">
+  <div class="wrap">
+    <header class="section__head reveal">
+      <span class="index mono">05</span>
+      <h2>Awards &amp; honors</h2>
+    </header>
+
+    <ol class="awards">
+      <li class="award reveal">
+        <span class="award__year mono">2022.08</span>
+        <span class="award__prize">Top Prize <small>Daejeon Mayor Award</small></span>
+        <span class="award__event">Robot Convergence Festival 2022, SRC Robot Contest</span>
+        <span class="award__org muted">Ministry of Trade, Industry and Energy · SeoulTech</span>
+      </li>
+      <li class="award reveal">
+        <span class="award__year mono">2022.07</span>
+        <span class="award__prize">2nd Place</span>
+        <span class="award__event">RoboCup 2022 Humanoid League, KidSize Technical Challenge</span>
+        <span class="award__org muted">RoboCup Federation · Bangkok, Thailand</span>
+      </li>
+      <li class="award reveal">
+        <span class="award__year mono">2022.07</span>
+        <span class="award__prize">3rd Place</span>
+        <span class="award__event">RoboCup 2022 Humanoid League, KidSize Drop-In Challenge</span>
+        <span class="award__org muted">RoboCup Federation · Bangkok, Thailand</span>
+      </li>
+      <li class="award reveal">
+        <span class="award__year mono">2022.06</span>
+        <span class="award__prize">1st Prize <small>Korea Institute for Robot Industry Advancement Award</small></span>
+        <span class="award__event">RoboCup 2022 Korea Open, Humanoid</span>
+        <span class="award__org muted">RoboCup Korea Association</span>
+      </li>
+      <li class="award reveal">
+        <span class="award__year mono">2021.12</span>
+        <span class="award__prize">1st Prize <small>Korea Institute for Robot Industry Advancement Award</small></span>
+        <span class="award__event">RoboCup 2021 Korea Open, Humanoid</span>
+        <span class="award__org muted">RoboCup Korea Association</span>
+      </li>
+      <li class="award reveal">
+        <span class="award__year mono">2021.10</span>
+        <span class="award__prize">Silver Prize <small>National Institute of Technology and Standards Award</small></span>
+        <span class="award__event">International Robot Contest 2021</span>
+        <span class="award__org muted">Ministry of Trade, Industry and Energy · SeoulTech</span>
+      </li>
+    </ol>
+  </div>
+</section>
+
+<!-- ===================== TOOLKIT ===================== -->
+<section class="section" id="toolkit">
+  <div class="wrap">
+    <header class="section__head reveal">
+      <span class="index mono">06</span>
+      <h2>Toolkit</h2>
+    </header>
+
+    <div class="toolkit">
+      <div class="tk reveal">
+        <h3 class="mono">LANGUAGES &amp; TOOLS</h3>
+        <ul class="chips chips--lg"><li>Python</li><li>C++</li><li>PyTorch</li><li>OpenCV</li><li>Linux</li><li>Git</li><li>Docker</li></ul>
+      </div>
+      <div class="tk reveal" style="--d:.06s">
+        <h3 class="mono">ROBOT LEARNING</h3>
+        <ul class="chips chips--lg"><li>Imitation learning</li><li>Vision-language-action models</li><li>Teleoperated demo collection</li></ul>
+      </div>
+      <div class="tk reveal" style="--d:.12s">
+        <h3 class="mono">PERCEPTION</h3>
+        <ul class="chips chips--lg"><li>Grasp affordance prediction</li><li>Grasp pose estimation</li><li>6D pose estimation</li><li>Detection / segmentation</li><li>3D point clouds</li></ul>
+      </div>
+      <div class="tk reveal" style="--d:.18s">
+        <h3 class="mono">ROBOT INTEGRATION</h3>
+        <ul class="chips chips--lg"><li>ROS</li><li>Hand-eye calibration</li><li>Real-robot policy deployment</li></ul>
+      </div>
+      <div class="tk reveal" style="--d:.24s">
+        <h3 class="mono">PLATFORMS</h3>
+        <ul class="chips chips--lg"><li>Franka (single &amp; dual-arm)</li><li>Unitree G1 humanoid</li></ul>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+</main>
+
+<!-- ===================== CONTACT ===================== -->
+<footer class="contact" id="contact">
+  <div class="wrap">
+    <p class="eyebrow mono reveal">07 / CONTACT</p>
+    <h2 class="contact__title reveal" style="--d:.06s">
+      Let's build robots<br>that work in the real world.
+    </h2>
+    <p class="contact__sub reveal" style="--d:.12s">
+      Open to research collaborations, internships, and conversations about bimanual manipulation and robot learning.
+    </p>
+    <div class="contact__links reveal" style="--d:.18s">
+      <a class="contact__link" href="mailto:sungjun4257@gmail.com">
+        <span class="mono muted">EMAIL</span><span>sungjun4257@gmail.com</span>
+      </a>
+      <a class="contact__link" href="https://github.com/sjkimr" target="_blank" rel="noopener">
+        <span class="mono muted">GITHUB</span><span>github.com/sjkimr</span>
+      </a>
+      <a class="contact__link" href="https://www.linkedin.com/in/sjkimr" target="_blank" rel="noopener">
+        <span class="mono muted">LINKEDIN</span><span>linkedin.com/in/sjkimr</span>
+      </a>
+    </div>
+    <div class="contact__foot mono muted">
+      <span>© 2026 Sungjun Kim</span>
+      <span>Robot Vision Lab, KIST · Seoul</span>
+      <a href="#top">Back to top ↑</a>
+    </div>
+  </div>
+</footer>
+
+<script src="assets/main.js?v=20261026s" defer></script>
+<script data-goatcounter="https://sungjun4257.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
+</body>
+</html>
